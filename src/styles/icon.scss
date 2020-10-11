@@ -1,0 +1,18 @@
+.icon {
+  width: 30px;
+  height: 30px;
+
+  &--arrow-down {
+    width: 15px;
+    height: 15px;
+    animation-name: wiggle-down;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  &--social {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+}

@@ -1,0 +1,114 @@
+.header {
+  background: url("../assets/img/jpg/header-bg.jpg");
+  background-repeat: repeat-x;
+  background-size: 100%;
+
+  &__logo {
+    display: block;
+    fill: $color-gold;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 2vw 0 0 0;
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  &__main-title {
+    margin-bottom: 0.65em;
+  }
+
+  &__subtitle {
+    margin-bottom: 2em;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 100px;
+  }
+
+  &__col {
+    flex: 0 0 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &--main {
+      overflow: hidden;
+      flex: 0 0 66%;
+      padding: calc(9vw + 50px) 0 0 0;
+
+      border-right: 1px solid $color-lightgray-2;
+      border-left: 1px solid $color-lightgray-2;
+    }
+  }
+
+  &__timetable {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translateX(-50%);
+    white-space: nowrap;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__buttons button:first-child {
+    margin-right: 3em;
+  }
+
+  &__button-down {
+    margin: 4vw auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid $color-lightgray-2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    &:before {
+      content: '';
+      background: $color-lightgray-2;
+      height: 23vw;
+      width: 1px;
+      position: absolute;
+      top: -23vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:after {
+      content: '';
+      background: $color-lightgray-2;
+      height: 100px;
+      width: 1px;
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__socials {
+    align-items: flex-end;
+  }
+}

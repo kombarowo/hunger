@@ -1,0 +1,59 @@
+.text {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1em;
+  color: #000000;
+  cursor: default;
+
+  &-weight--700 {
+    font-weight: 700;
+  }
+
+  &-lh--15 {
+    line-height: 1.5em;
+  }
+
+  &-color--1 {
+    color: #ffffff;
+  }
+
+  &-size--1 {
+    font-size: 18px;
+  }
+
+  &-size--2 {
+    font-size: 36px;
+  }
+
+  &-size--3 {
+    font-size: 96px;
+  }
+
+  &-family--banny {
+    font-family: 'Banny', sans-serif;
+  }
+
+  &-ls {
+    letter-spacing: 0.5em;
+  }
+
+  &-upper {
+    text-transform: uppercase;
+  }
+
+  &--link {
+    &:focus,
+    &:active {
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .text--link {
+    cursor: pointer;
+  }
+}

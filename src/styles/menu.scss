@@ -1,0 +1,46 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: flex-start;
+
+    &--end {
+      justify-content: flex-end;
+    }
+
+    &-col {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+    height: 100px;
+    flex: 0 1 130px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    & a {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: background 0.3s;
+
+      height: 100%;
+      width: 100%;
+
+      &:hover, &:focus, &:active {
+        background: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+}

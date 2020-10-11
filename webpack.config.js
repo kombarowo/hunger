@@ -101,9 +101,9 @@ module.exports = {
       ]
     }),
     new ImageminPlugin({
-      pngquant: ({quality: 50}),
+      pngquant: ({quality: 75}),
       plugins: [
-        imageminMozjpeg({quality: 50})
+        imageminMozjpeg({quality: 90})
       ]
     }),
     new SpriteLoaderPlugin()
