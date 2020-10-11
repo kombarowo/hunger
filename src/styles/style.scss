@@ -11,6 +11,8 @@
 @import "header";
 @import "decor";
 @import "our-team";
+@import "form";
+@import "book-table";
 
 .wrapper {
   max-width: 1440px;
@@ -28,6 +30,7 @@
 .section {
   padding: 3vw 0;
   display: flex;
+  flex-wrap: wrap;
 
   &__content {
     box-sizing: border-box;
