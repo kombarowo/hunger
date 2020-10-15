@@ -12,7 +12,7 @@
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    right: 0;
+    left: 0;
   }
 
   &--right:after {
@@ -26,6 +26,7 @@
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    left: 0;
+    left: auto;
+    right: 0;
   }
 }

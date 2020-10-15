@@ -1,0 +1,92 @@
+.contact {
+  &__form {
+    padding-top: 25px;
+  }
+
+  &__form .input {
+    flex: 0 0 100%;
+  }
+
+  &__form .input--area {
+    flex: 0 0 100%;
+  }
+
+  &__form button {
+    flex: 0 0 100%;
+  }
+}
+
+.contact .form__contacts {
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px 0;
+  height: 80px;
+}
+
+@media (min-width: 420px) {
+  .contact {
+    &__form {
+      padding-top: 25px;
+    }
+
+    &__form .input {
+      min-width: 0;
+      flex: 0 0 49%;
+    }
+
+    &__form .input--area {
+      flex: 0 0 100%;
+    }
+
+    &__form button {
+      flex: 0 0 40%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .contact {
+    &__form .input {
+      flex: 0 0 32%;
+    }
+
+    &__form .input--area {
+      flex: 0 0 100%;
+    }
+
+    &__form button {
+      flex: 0 0 50%;
+    }
+  }
+  .contact .form__contacts {
+    height: auto;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 900px) {
+  .contact {
+    &__form button {
+      margin: 0;
+      flex: 0 0 28%;
+    }
+  }
+  .contact .form__contacts {
+    flex: 0 0 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    &__form button {
+      margin: 0;
+      flex: 0 0 49%;
+    }
+  }
+  .contact .form__contacts {
+    flex: 0 0 49%;
+  }
+}

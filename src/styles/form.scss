@@ -3,19 +3,30 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  &__button{
+  &__button {
     flex: 0 0 100%;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 .input {
+  min-width: 0;
   box-sizing: border-box;
   background: $color-gray;
   border: none;
   border-radius: 5px;
   padding: 1.3em 1em;
-  flex: 0 0 calc(50% - 0.5em);
+  flex: 0 0 100%;
   margin-bottom: 1em;
+
+  &--area {
+    resize: none;
+  }
 
   &:focus {
     outline: none;

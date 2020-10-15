@@ -14,7 +14,6 @@
 
   <div class="menu">
     <div class="container">
-      <div class="menu__button"></div>
       <div class="menu__body">
         <ul class="menu__list menu__list--main">
           <li class="menu__list-col">
@@ -35,6 +34,7 @@
           </li>
         </ul>
       </div>
+      <div class="menu__button"><span></span></div>
     </div>
   </div>
 
@@ -87,7 +87,7 @@
     </header>
 
     <section class="about">
-      <div class="container section">
+      <div class="container section section--flex">
         <div class="section__content">
           <h2 class="text text-upper text-weight--700 text-size--2 text-family--banny main-title">
             ABOUT US
@@ -105,15 +105,16 @@
             feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
           </p>
         </div>
-        <div class="section__image decor">
+        <div class="section__image decor decor--right">
           <img src="./assets/img/png/about.png" alt="about us">
         </div>
       </div>
     </section>
 
     <section class="our-team">
-      <div class="container section">
-        <div class="section__image decor decor--right">
+      <div class="container section section--flex">
+        <div class="section__title text text-color--1 text-weight--700 text-ls text-upper">our team</div>
+        <div class="section__image decor">
           <img src="./assets/img/png/chef.png" alt="about us">
         </div>
         <div class="section__content">
@@ -138,7 +139,7 @@
     </section>
 
     <section class="book-table">
-      <div class="container section">
+      <div class="container section section--flex">
         <div class="section__content">
           <h2 class="text text-upper text-weight--700 text-size--2 text-family--banny main-title">
             BOOK A TABLE
@@ -154,7 +155,7 @@
             </button>
           </form>
         </div>
-        <div class="section__image decor">
+        <div class="section__image decor decor--right">
           <img src="./assets/img/png/book.png" alt="about us">
         </div>
         <div class="book-table__timetable text text-color--2">Mon - Fri: <span
@@ -165,7 +166,381 @@
       </div>
     </section>
 
+    <section class="specialties">
+      <div class="container section">
+        <div class="section__title text text-color--1 text-weight--700 text-ls text-upper">specialties</div>
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <div class="slide slide--1">
+              <div class="section__image decor">
+                <img src="./assets/img/png/pancake.png" alt="about us">
+              </div>
+              <div class="section__content">
+                <h2
+                  class="specialties__title text text-color--1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+                  CHOCOLATE PANCAKES
+                </h2>
+                <p class="text text-color--1 text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor
+                  sit
+                  amet,
+                  consectetur adipiscing
+                  elit. Duis at
+                  velit maximus, molestie est a,
+                  tempor magna.
+                </p>
+                <p class="text text-color--1 text-lh--15">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+                  dictum,
+                  enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                  tincidunt
+                  feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                </p>
+              </div>
+            </div>
+            <div class="slide slide--2">
+              <div class="section__image decor decor--right">
+                <img src="./assets/img/png/chef.png" alt="about us">
+              </div>
+              <div class="section__content">
+                <h2 class="text text-color--1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+                  MASTER CHEF
+                </h2>
+                <p class="text text-color--1 text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor
+                  sit
+                  amet,
+                  consectetur adipiscing
+                  elit. Duis at
+                  velit maximus, molestie est a,
+                  tempor magna.
+                </p>
+                <p class="text text-color--1 text-lh--15">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+                  dictum,
+                  enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                  tincidunt
+                  feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                </p>
+              </div>
+            </div>
+            <div class="slide slide--3">
+              <div class="section__image decor decor--right">
+                <img src="./assets/img/png/chef.png" alt="about us">
+              </div>
+              <div class="section__content">
+                <h2 class="text text-color--1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+                  MASTER CHEF
+                </h2>
+                <p class="text text-color--1 text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor
+                  sit
+                  amet,
+                  consectetur adipiscing
+                  elit. Duis at
+                  velit maximus, molestie est a,
+                  tempor magna.
+                </p>
+                <p class="text text-color--1 text-lh--15">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+                  dictum,
+                  enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                  tincidunt
+                  feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section menu-list">
+      <div class="container">
+        <div class="section__desc"><h2
+          class="text1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+          MASTER CHEF
+        </h2>
+          <p class="text text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+          </p>
+        </div>
+        <div class="menu-list__tabs text text-upper text-weight--700">
+          <div class="menu-list__tab">SOUPE</div>
+          <div class="menu-list__tab">PIZZA</div>
+          <div class="menu-list__tab">PASTA</div>
+          <div class="menu-list__tab">DESERT</div>
+          <div class="menu-list__tab">WINE</div>
+          <div class="menu-list__tab">BEER</div>
+          <div class="menu-list__tab">DRINKS</div>
+        </div>
+        <ul class="menu-list__items">
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="events">
+      <div class="section section--flex">
+        <div class="container">
+          <div class="section__title text text-color--1 text-weight--700 text-ls text-upper">PRIVATE EVENTS</div>
+          <div class="section__image decor">
+            <img src="./assets/img/png/weed.png" alt="about us">
+            <div class="image__label text-color--1 text-weight--700 text-family--banny text-size--1 text-upper">
+              weedings
+            </div>
+          </div>
+          <div class="section__image decor decor--right">
+            <img src="./assets/img/png/corp.png" alt="about us">
+            <div class="image__label text-color--1 text-weight--700 text-family--banny text-size--1 text-upper">
+              corporate parties
+            </div>
+          </div>
+          <div class="text text-color--1 events__call">For private events please call:
+            <a href="tel:+40729131637" class="text text-color--1">
+                <span class="text-weight--700">+40 729 131 637
+                </span>
+            </a>or use the contact form.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__body">
+        <div class="gallery__image">
+          <img src="./assets/img/jpg/gallery-1.jpg" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="./assets/img/jpg/gallery-2.jpg" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="./assets/img/jpg/gallery-3.jpg" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="./assets/img/jpg/gallery-4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section">
+      <div class="container">
+        <div class="section__desc">
+          <h2
+            class="text1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+            CONTACT
+          </h2>
+          <p class="text text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+          </p>
+        </div>
+        <form action="" class="form contact__form">
+          <input type="text" class="input" placeholder="Name">
+          <input type="email" class="input" placeholder="Email">
+          <input type="tel" class="input" placeholder="Phone">
+          <textarea class="input input--area" name="" rows="6" placeholder="Message"></textarea>
+          <div class="form__contacts">
+            <div class="text text-weight--700">
+              <svg class="icon icon--geo">
+                <use href="#_sprite_geo"></use>
+              </svg>
+              5th London Boulevard, U.K.
+            </div>
+            <a href="tel:+40729131637" class="text text-weight--700 text--color-1">
+              <svg class="icon icon--phone">
+                <use href="#_sprite_phone"></use>
+              </svg>
+              +40 729 131 637</a>
+            <div class="text">
+              <svg class="icon icon--email">
+                <use href="#_sprite_email"></use>
+              </svg>
+              office@mindblister.com
+            </div>
+          </div>
+          <button
+            class="button button-bg--1 button-br form__button text text-upper text-weight--700 text-color--1">
+            send message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="map section">
+      <iframe
+        class="map__body"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.848591980924!2d14.441476691929257!3d40.87542057880191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bafb98245d643%3A0x28b132111f33221e!2sHungry%20people!5e0!3m2!1sru!2sru!4v1602519576754!5m2!1sru!2sru"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="text text-color--1">© Copyright Mindblister 2019</div>
+    </footer>
   </main>
 
 </div>

@@ -41,12 +41,30 @@
   border: 1px solid $color-lightgray-2;
 }
 
-.button-social:not(:last-of-type){
+.button-social svg {
+  transition: fill 0.3s;
+}
+
+.button-social:not(:last-of-type) {
   margin-bottom: 25px;
 }
 
 @media (min-width: 1024px) {
-  .button:hover {
-    cursor: pointer;
+  .button-social:hover svg {
+    fill: $color-gold;
+  }
+  .button {
+    &:hover {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    &--down:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    &-bg--1:hover {
+      background: #d0b501;
+    }
   }
 }
