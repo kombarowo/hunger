@@ -39,56 +39,59 @@
   </div>
 
   <main class="content">
-    <header class="header">
+    <header class="header anim" data-anim="fadeInUp,once">
       <div class="container header__container">
         <svg class="header__logo">
-          <use href="#_sprite_main-logo"></use>
-          <div class="header__row">
-            <div class="header__col">
-              <span class="header__timetable text text-color--1">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
-            </div>
-            <div class="header__col header__col--main">
-              <div class="text text-color--1 text-ls text-weight--700 text-upper header__subtitle">RESTAURANT</div>
-              <div class="text text-color--1 text-upper text-size--3 text-family--banny header__main-title main-title">
-                HUNGRY PEOPLE
-              </div>
-              <div class="header__buttons">
-                <button class="button button-br button-bg--1 text text-color--1 text-upper">BOOK TABLE</button>
-                <button class="button button-br button-bd--1 text text-color--1 text-upper">EXPLORE</button>
-              </div>
-              <div class="header__button-down">
-                <button class="button button--down">
-                  <svg class="icon icon--arrow-down">
-                    <use href="#_sprite_arrow-down"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="header__col header__socials">
-              <button class="button button-social">
-                <svg class="icon icon--social">
-                  <use href="#_sprite_facebook"></use>
-                </svg>
-              </button>
-              <button class="button button-social">
-                <svg class="icon icon--social">
-                  <use href="#_sprite_twitter"></use>
-                </svg>
-              </button>
-              <button class="button button-social">
-                <svg class="icon icon--social">
-                  <use href="#_sprite_instagram"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
+          <use href="#_sprite_main-logo" class="rotate180"></use>
         </svg>
+        <div class="header__row">
+          <div class="header__col">
+            <span class="header__timetable text text-color--1">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+          </div>
+          <div class="header__col header__col--main">
+            <div class="text text-color--1 text-ls text-weight--700 text-upper header__subtitle">RESTAURANT</div>
+            <div class="text text-color--1 text-upper text-size--3 text-family--banny header__main-title main-title">
+              HUNGRY PEOPLE
+            </div>
+            <div class="header__buttons">
+              <a href="book-table" data-type="anchor"
+                 class="button button-br button-bg--1 text text-color--1 text-upper">BOOK
+                TABLE</a>
+              <a href="spec" data-type="anchor"
+                 class="button button-br button-bd--1 text text-color--1 text-upper">EXPLORE</a>
+            </div>
+            <a href="about" data-type="anchor" class="header__button-down">
+              <button class="button button--down">
+                <svg class="icon icon--arrow-down">
+                  <use href="#_sprite_arrow-down"></use>
+                </svg>
+              </button>
+            </a>
+          </div>
+          <div class="header__col header__socials">
+            <button class="button button-social">
+              <svg class="icon icon--social">
+                <use href="#_sprite_facebook"></use>
+              </svg>
+            </button>
+            <button class="button button-social">
+              <svg class="icon icon--social">
+                <use href="#_sprite_twitter"></use>
+              </svg>
+            </button>
+            <button class="button button-social">
+              <svg class="icon icon--social">
+                <use href="#_sprite_instagram"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="container section section--flex">
-        <div class="section__content">
+        <div class="section__content anim" data-anim="fadeInLeft,once">
           <h2 class="text text-upper text-weight--700 text-size--2 text-family--banny main-title">
             ABOUT US
           </h2>
@@ -105,19 +108,21 @@
             feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
           </p>
         </div>
-        <div class="section__image decor decor--right">
+        <div class="section__image decor decor--right anim" data-anim="fadeInRight,once">
           <img src="./assets/img/png/about.png" alt="about us">
         </div>
       </div>
     </section>
 
-    <section class="our-team">
+    <section class="our-team anim" data-anim="fadeInDown,once">
       <div class="container section section--flex">
-        <div class="section__title text text-color--1 text-weight--700 text-ls text-upper">our team</div>
-        <div class="section__image decor">
+        <div class="section__title text text-color--1 text-weight--700 text-ls text-upper anim"
+             data-anim="fadeIn,,0.25">our team
+        </div>
+        <div class="section__image decor anim" data-anim="fadeInLeft,once,0.5">
           <img src="./assets/img/png/chef.png" alt="about us">
         </div>
-        <div class="section__content">
+        <div class="section__content anim" data-anim="fadeInRight,once,0.5">
           <h2 class="text text-color--1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
             MASTER CHEF
           </h2>
@@ -138,19 +143,19 @@
       </div>
     </section>
 
-    <section class="book-table">
+    <section id="book-table" class="book-table anim" data-anim="fadeInDown,once">
       <div class="container section section--flex">
-        <div class="section__content">
+        <div class="section__content anim" data-anim="fadeInLeft,once,0.25">
           <h2 class="text text-upper text-weight--700 text-size--2 text-family--banny main-title">
             BOOK A TABLE
           </h2>
           <form name="book-table" class="form book-table__form">
-            <input type="text" class="input" placeholder="Name">
-            <input type="email" class="input" placeholder="Email">
-            <input type="tel" class="input" placeholder="Phone">
-            <input type="number" class="input" placeholder="People" max="6">
-            <input type="date" class="input">
-            <input type="time" class="input">
+            <input name="name" type="text" class="input" placeholder="Name">
+            <input name="email" type="email" class="input" placeholder="Email">
+            <input name="tel" type="tel" class="input" placeholder="Phone">
+            <input name="people-count" type="number" class="input" placeholder="People" max="6" min="0">
+            <input name="date" type="date" class="input">
+            <input name="time" type="time" class="input">
             <button class="form__button button button-bg--1 button-br text text-color--1 text-weight--700">BOOK NOW
             </button>
           </form>
@@ -166,10 +171,10 @@
       </div>
     </section>
 
-    <section class="specialties">
+    <section id="spec" class="specialties anim" data-anim="fadeInDown,once">
       <div class="container section">
         <div class="section__title text text-color--1 text-weight--700 text-ls text-upper">specialties</div>
-        <div class="slider-container">
+        <div class="slider-container anim" data-anim="fadeInRight,once,0.25">
           <div class="slider-wrapper">
             <div class="slide slide--1">
               <div class="section__image decor">
@@ -248,13 +253,14 @@
               </div>
             </div>
           </div>
+          <div class="slider-pagination"></div>
         </div>
       </div>
     </section>
 
     <section class="section menu-list">
       <div class="container">
-        <div class="section__desc"><h2
+        <div class="section__desc anim" data-anim="fadeInUp,once"><h2
           class="text1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
           MASTER CHEF
         </h2>
@@ -263,15 +269,15 @@
           </p>
         </div>
         <div class="menu-list__tabs text text-upper text-weight--700">
-          <div class="menu-list__tab">SOUPE</div>
-          <div class="menu-list__tab">PIZZA</div>
-          <div class="menu-list__tab">PASTA</div>
-          <div class="menu-list__tab">DESERT</div>
-          <div class="menu-list__tab">WINE</div>
-          <div class="menu-list__tab">BEER</div>
-          <div class="menu-list__tab">DRINKS</div>
+          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.1">SOUPE</div>
+          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.3">PIZZA</div>
+          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.5">PASTA</div>
+          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.7">DESERT</div>
+          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.9">WINE</div>
+          <div class="menu-list__tab anim" data-anim="fadeIn,once,1.1">BEER</div>
+          <div class="menu-list__tab anim" data-anim="fadeIn,once,1.3">DRINKS</div>
         </div>
-        <ul class="menu-list__items">
+        <ul class="menu-list__items anim" data-anim="fadeInDown,once,0.5">
           <li class="menu-list__item dish">
             <div class="dish__desc">
               <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
@@ -444,17 +450,17 @@
       </div>
     </section>
 
-    <section class="events">
-      <div class="section section--flex">
+    <section class="events anim" data-anim=fadeIn,once>
+      <div class="section section--flex anim" data-anim="fadeInDown,once">
         <div class="container">
           <div class="section__title text text-color--1 text-weight--700 text-ls text-upper">PRIVATE EVENTS</div>
-          <div class="section__image decor">
+          <div class="section__image decor anim" data-anim="fadeInLeft,once,0.5">
             <img src="./assets/img/png/weed.png" alt="about us">
             <div class="image__label text-color--1 text-weight--700 text-family--banny text-size--1 text-upper">
               weedings
             </div>
           </div>
-          <div class="section__image decor decor--right">
+          <div class="section__image decor decor--right anim" data-anim="fadeInRight,once,0.7">
             <img src="./assets/img/png/corp.png" alt="about us">
             <div class="image__label text-color--1 text-weight--700 text-family--banny text-size--1 text-upper">
               corporate parties
@@ -485,11 +491,12 @@
           <img src="./assets/img/jpg/gallery-4.jpg" alt="">
         </div>
       </div>
+      <div class="slider-pagination"></div>
     </section>
 
     <section class="contact section">
       <div class="container">
-        <div class="section__desc">
+        <div class="section__desc anim" data-anim="fadeInUp,once">
           <h2
             class="text1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
             CONTACT
@@ -498,11 +505,11 @@
             consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
           </p>
         </div>
-        <form action="" class="form contact__form">
-          <input type="text" class="input" placeholder="Name">
-          <input type="email" class="input" placeholder="Email">
-          <input type="tel" class="input" placeholder="Phone">
-          <textarea class="input input--area" name="" rows="6" placeholder="Message"></textarea>
+        <form action="" class="form contact__form anim" data-anim="fadeInDown,once">
+          <input dirname="name" type="text" class="input" placeholder="Name">
+          <input dirname="email" type="email" class="input" placeholder="Email">
+          <input dirname="tel" type="tel" class="input" placeholder="Phone">
+          <textarea dirname="message" class="input input--area" name="" rows="6" placeholder="Message"></textarea>
           <div class="form__contacts">
             <div class="text text-weight--700">
               <svg class="icon icon--geo">

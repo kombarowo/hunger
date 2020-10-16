@@ -3,31 +3,14 @@
   &__body {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
 
-  &__image {
-    flex: 0 0 50%;
+  &__image{
+    flex-shrink: 0;
   }
 
   &__image img {
     display: block;
     max-width: 100%;
-  }
-}
-
-@media (min-width: 720px) {
-  .gallery {
-    &__image {
-      flex: 0 0 calc(100% / 3);
-    }
-  }
-}
-
-@media (min-width: 1020px) {
-  .gallery {
-    &__image {
-      flex: 0 0 25%;
-    }
   }
 }

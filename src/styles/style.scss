@@ -24,6 +24,7 @@
   margin: 0 auto;
 
   position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -86,6 +87,28 @@
 .slider-wrapper {
   display: flex;
   width: 100%;
+}
+
+.slider-pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.slider-bullet {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: $color-gray;
+  border-radius: 50%;
+
+  &--active {
+    background: $color-gold;
+  }
+}
+
+.slider-bullet:not(:last-of-type) {
+  margin-right: 15px;
 }
 
 .slide {
@@ -177,10 +200,10 @@
 }
 
 @media (max-width: 750px) {
-  .about{
+  .about {
     padding: 25px 0;
   }
-  .about .section__image{
+  .about .section__image {
     display: none;
   }
   .events .container {

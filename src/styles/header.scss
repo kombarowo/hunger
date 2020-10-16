@@ -1,6 +1,7 @@
 .header {
   background: url("../assets/img/jpg/header-bg.jpg");
   background-repeat: repeat-x;
+  min-height: 100vh;
 
   &__logo {
     display: block;
@@ -67,7 +68,7 @@
     display: flex;
   }
 
-  &__buttons button:first-child {
+  &__buttons .button:first-child {
     margin-right: 3em;
   }
 
@@ -202,7 +203,7 @@
       flex-direction: column;
     }
 
-    &__buttons button:first-child {
+    &__buttons .button:first-child {
       margin-right: 0;
       margin-bottom: 25px;
     }

@@ -3,6 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 42;
+  transition: left 0.3s;
 
   &__list {
     list-style: none;
@@ -59,9 +61,8 @@
   }
   .menu {
     position: fixed;
-    z-index: 42;
-    overflow: hidden;
     left: -200px;
+    width: auto;
 
     &__body {
       height: 100vh;
@@ -91,16 +92,18 @@
 
   .menu .container {
     padding: 0;
-    display: flex;
+    position: relative;
   }
 
   .menu__button {
     display: block;
     font-size: 0;
-    position: relative;
     width: 30px;
     height: 20px;
     z-index: 2;
+    position: absolute;
+    top: 0;
+    right: -75px;
   }
   .menu__button span {
     background-color: #fff;
