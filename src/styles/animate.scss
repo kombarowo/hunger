@@ -41,6 +41,12 @@
   animation-fill-mode: forwards;
 }
 
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 .fadeInLeft {
   animation-name: fadeInLeft;
   animation-duration: 1s;
@@ -73,6 +79,17 @@
   100% {
     opacity: 1;
     visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 

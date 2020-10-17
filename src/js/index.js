@@ -6,6 +6,8 @@ import initAnchors from "./modules/anchors";
 import Swiper, {Pagination} from 'swiper';
 import Menu from "./modules/menu";
 import Form from "./modules/forms";
+import Tabs from "./modules/tabs";
+import HomeButton from "./modules/home-button";
 
 Swiper.use([Pagination]);
 
@@ -58,6 +60,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
   new Form({
     selector: 'form',
-    url: 'https://forms-backend.firebaseio.com/proj.json'
+    url: 'https://forms-backend.firebaseio.com/hungry.json'
   }).init();
+
+  new Tabs('.menu-list__tabs', {
+    tabClass: '.menu-list__tab',
+    content: '.menu-list__item'
+  }).init();
+
+  new HomeButton('.button--home').init();
 })

@@ -18,18 +18,26 @@
         <ul class="menu__list menu__list--main">
           <li class="menu__list-col">
             <ul class="menu__list">
-              <li class="menu__item"><a href="" class="text text--link text-weight--700 text-color--1">HOME</a></li>
-              <li class="menu__item"><a href="" class="text text--link text-weight--700 text-color--1">ABOUT</a></li>
-              <li class="menu__item"><a href="" class="text text--link text-weight--700 text-color--1">TEAM</a></li>
-              <li class="menu__item"><a href="" class="text text--link text-weight--700 text-color--1">BOOKING</a></li>
+              <li class="menu__item"><a href="home" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">HOME</a></li>
+              <li class="menu__item"><a href="about" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">ABOUT</a></li>
+              <li class="menu__item"><a href="team" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">TEAM</a></li>
+              <li class="menu__item"><a href="book-table" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">BOOKING</a></li>
             </ul>
           </li>
           <li class="menu__list-col">
             <ul class="menu__list menu__list--end">
-              <li class="menu__item"><a href="" class="text text--link text-weight--700 text-color--1">MENU</a></li>
-              <li class="menu__item"><a href="" class="text text--link text-weight--700 text-color--1">GALERIE</a></li>
-              <li class="menu__item"><a href="" class="text text--link text-weight--700 text-color--1">EVENTS</a></li>
-              <li class="menu__item"><a href="" class="text text--link text-weight--700 text-color--1">CONTACT</a></li>
+              <li class="menu__item"><a href="menu-list" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">MENU</a></li>
+              <li class="menu__item"><a href="gallery" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">GALERIE</a></li>
+              <li class="menu__item"><a href="events" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">EVENTS</a></li>
+              <li class="menu__item"><a href="contact" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">CONTACT</a></li>
             </ul>
           </li>
         </ul>
@@ -39,7 +47,7 @@
   </div>
 
   <main class="content">
-    <header class="header anim" data-anim="fadeInUp,once">
+    <header id="home" class="header anim" data-anim="fadeInUp,once">
       <div class="container header__container">
         <svg class="header__logo">
           <use href="#_sprite_main-logo" class="rotate180"></use>
@@ -63,7 +71,7 @@
             <a href="about" data-type="anchor" class="header__button-down">
               <button class="button button--down">
                 <svg class="icon icon--arrow-down">
-                  <use href="#_sprite_arrow-down"></use>
+                  <use href="#_sprite_arrow"></use>
                 </svg>
               </button>
             </a>
@@ -114,7 +122,7 @@
       </div>
     </section>
 
-    <section class="our-team anim" data-anim="fadeInDown,once">
+    <section id="team" class="our-team anim" data-anim="fadeInDown,once">
       <div class="container section section--flex">
         <div class="section__title text text-color--1 text-weight--700 text-ls text-upper anim"
              data-anim="fadeIn,,0.25">our team
@@ -258,7 +266,7 @@
       </div>
     </section>
 
-    <section class="section menu-list">
+    <section id="menu-list" class="section menu-list">
       <div class="container">
         <div class="section__desc anim" data-anim="fadeInUp,once"><h2
           class="text1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
@@ -269,16 +277,16 @@
           </p>
         </div>
         <div class="menu-list__tabs text text-upper text-weight--700">
-          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.1">SOUPE</div>
-          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.3">PIZZA</div>
-          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.5">PASTA</div>
-          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.7">DESERT</div>
-          <div class="menu-list__tab anim" data-anim="fadeIn,once,0.9">WINE</div>
-          <div class="menu-list__tab anim" data-anim="fadeIn,once,1.1">BEER</div>
-          <div class="menu-list__tab anim" data-anim="fadeIn,once,1.3">DRINKS</div>
+          <div class="menu-list__tab anim" data-type="soupe" data-anim="fadeIn,once,0.1">SOUPE</div>
+          <div class="menu-list__tab anim" data-type="pizza" data-anim="fadeIn,once,0.3">PIZZA</div>
+          <div class="menu-list__tab anim" data-type="pasta" data-anim="fadeIn,once,0.5">PASTA</div>
+          <div class="menu-list__tab anim" data-type="desert" data-anim="fadeIn,once,0.7">DESERT</div>
+          <div class="menu-list__tab anim" data-type="wine" data-anim="fadeIn,once,0.9">WINE</div>
+          <div class="menu-list__tab anim" data-type="beer" data-anim="fadeIn,once,1.1">BEER</div>
+          <div class="menu-list__tab anim" data-type="drink" data-anim="fadeIn,once,1.3">DRINKS</div>
         </div>
         <ul class="menu-list__items anim" data-anim="fadeInDown,once,0.5">
-          <li class="menu-list__item dish">
+          <li class="menu-list__item dish" data-type="pizza">
             <div class="dish__desc">
               <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
               </div>
@@ -286,7 +294,47 @@
             </div>
             <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
           </li>
-          <li class="menu-list__item dish">
+          <li class="menu-list__item dish" data-type="beer">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">BEER QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="beer">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">BEER QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="drink">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DRINK QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="soupe">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">SOUPE QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="pasta">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PASTA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="pizza">
             <div class="dish__desc">
               <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
               </div>
@@ -294,7 +342,103 @@
             </div>
             <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
           </li>
-          <li class="menu-list__item dish">
+          <li class="menu-list__item dish" data-type="soupe">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">SOUPE QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="desert">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DESERT QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="desert">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DESERT QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="wine">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">wine QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="drink">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DRINK QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="drink">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DRINK QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="beer">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">BEER QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="beer">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">beer QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="pasta">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">pasta QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="wine">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">wine QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="desert">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">desert QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="soupe">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">soupe QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="pizza">
             <div class="dish__desc">
               <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
               </div>
@@ -302,143 +446,7 @@
             </div>
             <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
           </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
-            <div class="dish__desc">
-              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
-              </div>
-              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
-            </div>
-            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
-          </li>
-          <li class="menu-list__item dish">
+          <li class="menu-list__item dish" data-type="pizza">
             <div class="dish__desc">
               <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
               </div>
@@ -450,7 +458,7 @@
       </div>
     </section>
 
-    <section class="events anim" data-anim=fadeIn,once>
+    <section id="events" class="events anim" data-anim=fadeIn,once>
       <div class="section section--flex anim" data-anim="fadeInDown,once">
         <div class="container">
           <div class="section__title text text-color--1 text-weight--700 text-ls text-upper">PRIVATE EVENTS</div>
@@ -476,7 +484,7 @@
       </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <div class="gallery__body">
         <div class="gallery__image">
           <img src="./assets/img/jpg/gallery-1.jpg" alt="">
@@ -494,7 +502,7 @@
       <div class="slider-pagination"></div>
     </section>
 
-    <section class="contact section">
+    <section id="contact" class="contact section">
       <div class="container">
         <div class="section__desc anim" data-anim="fadeInUp,once">
           <h2
@@ -506,10 +514,10 @@
           </p>
         </div>
         <form action="" class="form contact__form anim" data-anim="fadeInDown,once">
-          <input dirname="name" type="text" class="input" placeholder="Name">
-          <input dirname="email" type="email" class="input" placeholder="Email">
-          <input dirname="tel" type="tel" class="input" placeholder="Phone">
-          <textarea dirname="message" class="input input--area" name="" rows="6" placeholder="Message"></textarea>
+          <input name="name" type="text" class="input" placeholder="Name">
+          <input name="email" type="email" class="input" placeholder="Email">
+          <input name="tel" type="tel" class="input" placeholder="Phone">
+          <textarea name="message" class="input input--area" name="" rows="6" placeholder="Message"></textarea>
           <div class="form__contacts">
             <div class="text text-weight--700">
               <svg class="icon icon--geo">
@@ -548,6 +556,12 @@
     <footer class="footer">
       <div class="text text-color--1">© Copyright Mindblister 2019</div>
     </footer>
+
+    <a href="home" data-type="anchor" class="button button-bg--1 button--home text">
+      <svg class="icon icon--arrow-up">
+        <use href="#_sprite_arrow"></use>
+      </svg>
+    </a>
   </main>
 
 </div>

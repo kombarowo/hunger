@@ -25,7 +25,7 @@ export default class Form {
     const jsonData = new Parser(formData).toJson();
 
     const statusElement = this.createStatusElement();
-    form.insertAdjacentElement('afterend', statusElement);
+    document.body.appendChild(statusElement);
 
     this.setStatus(statusElement, 'loading')
 
@@ -46,12 +46,22 @@ export default class Form {
 
   createStatusElement() {
     const status = document.createElement('div');
+    status.classList.add('text');
     status.style.cssText = `
-    padding: 20px;
-    color: #fff;
-    font-size: 30px;
+    position: fixed;
+    z-index: 10;
+    bottom: 5vw;
+    right: 5vw;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 18px;
     font-weight: 700;
-    width: 125px;
+    width: 175px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
     `
     return status;
   }
@@ -85,7 +95,10 @@ export default class Form {
   }
 
   clearStatus(elem) {
-    elem.remove()
+    elem.classList.add('fadeOut');
+    setTimeout(() => {
+      elem.remove();
+    }, 1000);
   }
 
   finishSubmit(statusElement, form, status) {
@@ -94,7 +107,7 @@ export default class Form {
       this.clearInputs(form);
       setTimeout(() => {
         this.clearStatus(statusElement);
-      }, 2000);
+      }, 1500);
     } else {
       this.setStatus(statusElement, 'error');
       this.clearInputs(form);

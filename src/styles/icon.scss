@@ -10,6 +10,12 @@
     animation-iteration-count: infinite;
   }
 
+  &--arrow-up {
+    transform: rotate(180deg);
+    width: 15px;
+    height: 15px;
+  }
+
   &--social {
     width: 20px;
     height: 20px;

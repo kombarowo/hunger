@@ -18,6 +18,9 @@
 
     border-right: 1px solid $color-gray;
   }
+  &__tab.active{
+    background: $color-gray;
+  }
 
   &__items {
     margin: 0;
