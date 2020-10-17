@@ -1,0 +1,79 @@
+.button {
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  width: 200px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &-br {
+    border-radius: 5px;
+  }
+
+  &-bd--1 {
+    border: 1px solid $color-lightgray;
+  }
+
+  &-bg--1 {
+    background: $color-gold;
+  }
+}
+
+.button--down {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+}
+
+.button--home {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.button-social {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid $color-lightgray-2;
+}
+
+.button-social svg {
+  transition: fill 0.3s;
+}
+
+.button-social:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1024px) {
+  .button-social:hover svg {
+    fill: $color-gold;
+  }
+  .button {
+    &:hover {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    &--down:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    &-bg--1:hover {
+      background: #d0b501;
+    }
+  }
+}

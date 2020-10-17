@@ -10,9 +10,561 @@
 
 <body>
 
-<main class="content">
+<div class="wrapper">
 
-</main>
+  <div class="menu">
+    <div class="container">
+      <div class="menu__body">
+        <ul class="menu__list menu__list--main">
+          <li class="menu__list-col">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="home" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">HOME</a></li>
+              <li class="menu__item"><a href="about" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">ABOUT</a></li>
+              <li class="menu__item"><a href="team" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">TEAM</a></li>
+              <li class="menu__item"><a href="book-table" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">BOOKING</a></li>
+            </ul>
+          </li>
+          <li class="menu__list-col">
+            <ul class="menu__list menu__list--end">
+              <li class="menu__item"><a href="menu-list" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">MENU</a></li>
+              <li class="menu__item"><a href="gallery" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">GALERIE</a></li>
+              <li class="menu__item"><a href="events" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">EVENTS</a></li>
+              <li class="menu__item"><a href="contact" data-type="anchor"
+                                        class="text text--link text-weight--700 text-color--1">CONTACT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__button"><span></span></div>
+    </div>
+  </div>
+
+  <main class="content">
+    <header id="home" class="header anim" data-anim="fadeInUp,once">
+      <div class="container header__container">
+        <svg class="header__logo">
+          <use href="#_sprite_main-logo" class="rotate180"></use>
+        </svg>
+        <div class="header__row">
+          <div class="header__col">
+            <span class="header__timetable text text-color--1">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+          </div>
+          <div class="header__col header__col--main">
+            <div class="text text-color--1 text-ls text-weight--700 text-upper header__subtitle">RESTAURANT</div>
+            <div class="text text-color--1 text-upper text-size--3 text-family--banny header__main-title main-title">
+              HUNGRY PEOPLE
+            </div>
+            <div class="header__buttons">
+              <a href="book-table" data-type="anchor"
+                 class="button button-br button-bg--1 text text-color--1 text-upper">BOOK
+                TABLE</a>
+              <a href="spec" data-type="anchor"
+                 class="button button-br button-bd--1 text text-color--1 text-upper">EXPLORE</a>
+            </div>
+            <a href="about" data-type="anchor" class="header__button-down">
+              <button class="button button--down">
+                <svg class="icon icon--arrow-down">
+                  <use href="#_sprite_arrow"></use>
+                </svg>
+              </button>
+            </a>
+          </div>
+          <div class="header__col header__socials">
+            <button class="button button-social">
+              <svg class="icon icon--social">
+                <use href="#_sprite_facebook"></use>
+              </svg>
+            </button>
+            <button class="button button-social">
+              <svg class="icon icon--social">
+                <use href="#_sprite_twitter"></use>
+              </svg>
+            </button>
+            <button class="button button-social">
+              <svg class="icon icon--social">
+                <use href="#_sprite_instagram"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="about">
+      <div class="container section section--flex">
+        <div class="section__content anim" data-anim="fadeInLeft,once">
+          <h2 class="text text-upper text-weight--700 text-size--2 text-family--banny main-title">
+            ABOUT US
+          </h2>
+          <p class="text text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor sit amet,
+            consectetur adipiscing
+            elit. Duis at
+            velit maximus, molestie est a,
+            tempor magna.
+          </p>
+          <p class="text text-lh--15">
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+            dictum,
+            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+            feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+          </p>
+        </div>
+        <div class="section__image decor decor--right anim" data-anim="fadeInRight,once">
+          <img src="./assets/img/png/about.png" alt="about us">
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="our-team anim" data-anim="fadeInDown,once">
+      <div class="container section section--flex">
+        <div class="section__title text text-color--1 text-weight--700 text-ls text-upper anim"
+             data-anim="fadeIn,,0.25">our team
+        </div>
+        <div class="section__image decor anim" data-anim="fadeInLeft,once,0.5">
+          <img src="./assets/img/png/chef.png" alt="about us">
+        </div>
+        <div class="section__content anim" data-anim="fadeInRight,once,0.5">
+          <h2 class="text text-color--1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+            MASTER CHEF
+          </h2>
+          <p class="text text-color--1 text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor sit
+            amet,
+            consectetur adipiscing
+            elit. Duis at
+            velit maximus, molestie est a,
+            tempor magna.
+          </p>
+          <p class="text text-color--1 text-lh--15">
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+            dictum,
+            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+            feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="book-table" class="book-table anim" data-anim="fadeInDown,once">
+      <div class="container section section--flex">
+        <div class="section__content anim" data-anim="fadeInLeft,once,0.25">
+          <h2 class="text text-upper text-weight--700 text-size--2 text-family--banny main-title">
+            BOOK A TABLE
+          </h2>
+          <form name="book-table" class="form book-table__form">
+            <input name="name" type="text" class="input" placeholder="Name">
+            <input name="email" type="email" class="input" placeholder="Email">
+            <input name="tel" type="tel" class="input" placeholder="Phone">
+            <input name="people-count" type="number" class="input" placeholder="People" max="6" min="0">
+            <input name="date" type="date" class="input">
+            <input name="time" type="time" class="input">
+            <button class="form__button button button-bg--1 button-br text text-color--1 text-weight--700">BOOK NOW
+            </button>
+          </form>
+        </div>
+        <div class="section__image decor decor--right">
+          <img src="./assets/img/png/book.png" alt="about us">
+        </div>
+        <div class="book-table__timetable text text-color--2">Mon - Fri: <span
+          class="text-weight--700">8PM - 10PM</span>, Sat - Sun:
+          <span class="text-weight--700">8PM - 3AM</span>, Phone:
+          <a href="tel:+40729131637" class="text text-weight--700">+40 729 131 637</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="spec" class="specialties anim" data-anim="fadeInDown,once">
+      <div class="container section">
+        <div class="section__title text text-color--1 text-weight--700 text-ls text-upper">specialties</div>
+        <div class="slider-container anim" data-anim="fadeInRight,once,0.25">
+          <div class="slider-wrapper">
+            <div class="slide slide--1">
+              <div class="section__image decor">
+                <img src="./assets/img/png/pancake.png" alt="about us">
+              </div>
+              <div class="section__content">
+                <h2
+                  class="specialties__title text text-color--1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+                  CHOCOLATE PANCAKES
+                </h2>
+                <p class="text text-color--1 text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor
+                  sit
+                  amet,
+                  consectetur adipiscing
+                  elit. Duis at
+                  velit maximus, molestie est a,
+                  tempor magna.
+                </p>
+                <p class="text text-color--1 text-lh--15">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+                  dictum,
+                  enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                  tincidunt
+                  feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                </p>
+              </div>
+            </div>
+            <div class="slide slide--2">
+              <div class="section__image decor decor--right">
+                <img src="./assets/img/png/chef.png" alt="about us">
+              </div>
+              <div class="section__content">
+                <h2 class="text text-color--1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+                  MASTER CHEF
+                </h2>
+                <p class="text text-color--1 text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor
+                  sit
+                  amet,
+                  consectetur adipiscing
+                  elit. Duis at
+                  velit maximus, molestie est a,
+                  tempor magna.
+                </p>
+                <p class="text text-color--1 text-lh--15">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+                  dictum,
+                  enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                  tincidunt
+                  feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                </p>
+              </div>
+            </div>
+            <div class="slide slide--3">
+              <div class="section__image decor decor--right">
+                <img src="./assets/img/png/chef.png" alt="about us">
+              </div>
+              <div class="section__content">
+                <h2 class="text text-color--1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+                  MASTER CHEF
+                </h2>
+                <p class="text text-color--1 text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor
+                  sit
+                  amet,
+                  consectetur adipiscing
+                  elit. Duis at
+                  velit maximus, molestie est a,
+                  tempor magna.
+                </p>
+                <p class="text text-color--1 text-lh--15">
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+                  dictum,
+                  enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                  tincidunt
+                  feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu-list" class="section menu-list">
+      <div class="container">
+        <div class="section__desc anim" data-anim="fadeInUp,once"><h2
+          class="text1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+          MASTER CHEF
+        </h2>
+          <p class="text text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+          </p>
+        </div>
+        <div class="menu-list__tabs text text-upper text-weight--700">
+          <div class="menu-list__tab anim" data-type="soupe" data-anim="fadeIn,once,0.1">SOUPE</div>
+          <div class="menu-list__tab anim" data-type="pizza" data-anim="fadeIn,once,0.3">PIZZA</div>
+          <div class="menu-list__tab anim" data-type="pasta" data-anim="fadeIn,once,0.5">PASTA</div>
+          <div class="menu-list__tab anim" data-type="desert" data-anim="fadeIn,once,0.7">DESERT</div>
+          <div class="menu-list__tab anim" data-type="wine" data-anim="fadeIn,once,0.9">WINE</div>
+          <div class="menu-list__tab anim" data-type="beer" data-anim="fadeIn,once,1.1">BEER</div>
+          <div class="menu-list__tab anim" data-type="drink" data-anim="fadeIn,once,1.3">DRINKS</div>
+        </div>
+        <ul class="menu-list__items anim" data-anim="fadeInDown,once,0.5">
+          <li class="menu-list__item dish" data-type="pizza">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="beer">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">BEER QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="beer">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">BEER QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="drink">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DRINK QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="soupe">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">SOUPE QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="pasta">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PASTA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="pizza">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="soupe">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">SOUPE QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="desert">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DESERT QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="desert">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DESERT QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="wine">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">wine QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="drink">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DRINK QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="drink">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">DRINK QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="beer">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">BEER QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="beer">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">beer QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="pasta">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">pasta QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="wine">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">wine QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="desert">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">desert QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="soupe">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">soupe QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="pizza">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+          <li class="menu-list__item dish" data-type="pizza">
+            <div class="dish__desc">
+              <div class="text text-upper text-weight--700 text-size--1 text-family--banny">PIZZA QUATRO STAGIONI ...
+              </div>
+              <div class="text text-color--2">Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+            <div class="text text-upper text-weight--700 dish__price text-size--1 text-family--banny">152,68 USD</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="events" class="events anim" data-anim=fadeIn,once>
+      <div class="section section--flex anim" data-anim="fadeInDown,once">
+        <div class="container">
+          <div class="section__title text text-color--1 text-weight--700 text-ls text-upper">PRIVATE EVENTS</div>
+          <div class="section__image decor anim" data-anim="fadeInLeft,once,0.5">
+            <img src="./assets/img/png/weed.png" alt="about us">
+            <div class="image__label text-color--1 text-weight--700 text-family--banny text-size--1 text-upper">
+              weedings
+            </div>
+          </div>
+          <div class="section__image decor decor--right anim" data-anim="fadeInRight,once,0.7">
+            <img src="./assets/img/png/corp.png" alt="about us">
+            <div class="image__label text-color--1 text-weight--700 text-family--banny text-size--1 text-upper">
+              corporate parties
+            </div>
+          </div>
+          <div class="text text-color--1 events__call">For private events please call:
+            <a href="tel:+40729131637" class="text text-color--1">
+                <span class="text-weight--700">+40 729 131 637
+                </span>
+            </a>or use the contact form.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="gallery__body">
+        <div class="gallery__image">
+          <img src="./assets/img/jpg/gallery-1.jpg" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="./assets/img/jpg/gallery-2.jpg" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="./assets/img/jpg/gallery-3.jpg" alt="">
+        </div>
+        <div class="gallery__image">
+          <img src="./assets/img/jpg/gallery-4.jpg" alt="">
+        </div>
+      </div>
+      <div class="slider-pagination"></div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section__desc anim" data-anim="fadeInUp,once">
+          <h2
+            class="text1 text-upper text-weight--700 text-size--2 text-family--banny main-title">
+            CONTACT
+          </h2>
+          <p class="text text-size--1 text-weight--700 text-lh--15 main-subtitle">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+          </p>
+        </div>
+        <form action="" class="form contact__form anim" data-anim="fadeInDown,once">
+          <input name="name" type="text" class="input" placeholder="Name">
+          <input name="email" type="email" class="input" placeholder="Email">
+          <input name="tel" type="tel" class="input" placeholder="Phone">
+          <textarea name="message" class="input input--area" name="" rows="6" placeholder="Message"></textarea>
+          <div class="form__contacts">
+            <div class="text text-weight--700">
+              <svg class="icon icon--geo">
+                <use href="#_sprite_geo"></use>
+              </svg>
+              5th London Boulevard, U.K.
+            </div>
+            <a href="tel:+40729131637" class="text text-weight--700 text--color-1">
+              <svg class="icon icon--phone">
+                <use href="#_sprite_phone"></use>
+              </svg>
+              +40 729 131 637</a>
+            <div class="text">
+              <svg class="icon icon--email">
+                <use href="#_sprite_email"></use>
+              </svg>
+              office@mindblister.com
+            </div>
+          </div>
+          <button
+            class="button button-bg--1 button-br form__button text text-upper text-weight--700 text-color--1">
+            send message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="map section">
+      <iframe
+        class="map__body"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.848591980924!2d14.441476691929257!3d40.87542057880191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bafb98245d643%3A0x28b132111f33221e!2sHungry%20people!5e0!3m2!1sru!2sru!4v1602519576754!5m2!1sru!2sru"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="text text-color--1">© Copyright Mindblister 2019</div>
+    </footer>
+
+    <a href="home" data-type="anchor" class="button button-bg--1 button--home text">
+      <svg class="icon icon--arrow-up">
+        <use href="#_sprite_arrow"></use>
+      </svg>
+    </a>
+  </main>
+
+</div>
 
 </body>
 
